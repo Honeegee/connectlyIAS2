@@ -86,9 +86,9 @@ def google_login(request):
         )
         
         if not google_response.ok:
-            logger.error(f"Failed to verify Google token: {google_response.text}")
+            logger.error(f"Failed to verify Google token: Status {google_response.status_code}")
             return Response(
-                {'error': 'Invalid Google token'}, 
+                {'error': 'Invalid Google token'},
                 status=status.HTTP_401_UNAUTHORIZED
             )
         

@@ -5,8 +5,43 @@ Provides centralized logging functionality across the application.
 
 import logging
 import os
+import re
 from datetime import datetime
 from typing import Optional
+
+
+class SensitiveDataFilter(logging.Filter):
+    """Filter to redact sensitive data from log records."""
+
+    REDACTION_PATTERNS = [
+        (re.compile(r'(Bearer\s+)[A-Za-z0-9\-._~+/]+=*', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(Authorization[:\s]+Bearer\s+)[A-Za-z0-9\-._~+/]+=*', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(token["\s:=]+)[A-Za-z0-9\-._~+/]+=*', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(access_token["\s:=]+)[A-Za-z0-9\-._~+/]+=*', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(refresh_token["\s:=]+)[A-Za-z0-9\-._~+/]+=*', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(api[_-]?key["\s:=]+)[A-Za-z0-9\-._~+/]+=*', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(password["\s:=]+)[^\s,}"\']+', re.IGNORECASE), r'\1[REDACTED]'),
+        (re.compile(r'(secret["\s:=]+)[^\s,}"\']+', re.IGNORECASE), r'\1[REDACTED]'),
+    ]
+
+    def filter(self, record):
+        if hasattr(record, 'msg'):
+            message = str(record.msg)
+            for pattern, replacement in self.REDACTION_PATTERNS:
+                message = pattern.sub(replacement, message)
+            record.msg = message
+
+        if hasattr(record, 'args') and record.args:
+            args = list(record.args) if isinstance(record.args, tuple) else [record.args]
+            redacted_args = []
+            for arg in args:
+                arg_str = str(arg)
+                for pattern, replacement in self.REDACTION_PATTERNS:
+                    arg_str = pattern.sub(replacement, arg_str)
+                redacted_args.append(arg_str)
+            record.args = tuple(redacted_args)
+
+        return True
 
 
 class LoggerSingleton:
@@ -32,6 +67,9 @@ class LoggerSingleton:
         if not os.path.exists('logs'):
             os.makedirs('logs')
 
+        # Create sensitive data filter
+        sensitive_filter = SensitiveDataFilter()
+
         # Create console handler
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.INFO)
@@ -39,6 +77,7 @@ class LoggerSingleton:
             '%(asctime)s - %(levelname)s - %(message)s'
         )
         console_handler.setFormatter(console_formatter)
+        console_handler.addFilter(sensitive_filter)
 
         # Create file handler
         file_handler = logging.FileHandler(
@@ -49,6 +88,7 @@ class LoggerSingleton:
             '%(asctime)s - %(levelname)s - [%(name)s] - %(message)s'
         )
         file_handler.setFormatter(file_formatter)
+        file_handler.addFilter(sensitive_filter)
 
         # Add handlers to logger
         self.logger.addHandler(console_handler)
