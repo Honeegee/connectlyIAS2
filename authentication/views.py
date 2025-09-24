@@ -7,16 +7,38 @@ from django.db import IntegrityError
 from django.utils import timezone
 from rest_framework import status
 from rest_framework.authtoken.models import Token
+from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from allauth.socialaccount.models import SocialAccount
 from singletons.logger_singleton import LoggerSingleton
 from django_ratelimit.decorators import ratelimit
+from django_ratelimit.exceptions import Ratelimited
+from django.utils.decorators import method_decorator
 
 logger = LoggerSingleton().get_logger()
 
 # Create your views here.
+
+@method_decorator(ratelimit(key='ip', rate='5/m', method='POST', block=True), name='dispatch')
+class RateLimitedObtainAuthToken(ObtainAuthToken):
+    """
+    Custom token authentication view with rate limiting.
+    Limits: 5 requests per minute per IP address
+    """
+
+    def post(self, request, *args, **kwargs):
+        try:
+            response = super().post(request, *args, **kwargs)
+            logger.info(f"Token obtained successfully for user")
+            return response
+        except Ratelimited:
+            logger.warning(f"Rate limit exceeded for IP: {request.META.get('REMOTE_ADDR')}")
+            return Response(
+                {'error': 'Rate limit exceeded. Please try again later.'},
+                status=status.HTTP_429_TOO_MANY_REQUESTS
+            )
 
 def oauth_demo(request):
     """Render the Google OAuth demo page."""
@@ -61,11 +83,12 @@ def oauth_callback(request):
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
-@ratelimit(key='ip', rate='5/h', method='POST', block=True)
+@ratelimit(key='ip', rate='5/m', method='POST', block=True)
 def google_login(request):
     """
     Endpoint to handle Google OAuth login.
-    
+    Rate limited to 5 requests per minute per IP address.
+
     Expects a token from the Google OAuth process.
     Returns a DRF token for authenticated API access.
     """

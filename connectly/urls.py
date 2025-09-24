@@ -48,10 +48,10 @@ def health_check(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+
     # Auth endpoints
-    path('api/auth/token/', csrf_exempt(obtain_auth_token), name='api-token-auth'),
-    path('api/auth/', include('authentication.urls')),  # Google OAuth
+    # path('api/auth/token/', csrf_exempt(obtain_auth_token), name='api-token-auth'),  # Replaced with rate-limited version
+    path('api/auth/', include('authentication.urls')),  # Google OAuth + Rate-limited token endpoint
     path('api/auth/', include('dj_rest_auth.urls')),  # Regular authentication endpoints
     
     # API endpoints
