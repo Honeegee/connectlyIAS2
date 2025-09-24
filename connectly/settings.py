@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-zkktfou^524j17gl)o#1rws#6xmqvwkm4co6q%b0mvyiziq)p2')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = int(os.getenv('DEBUG', '1'))
+DEBUG = os.getenv('DEBUG', '1').lower() in ('true', '1', 'yes')
 
-ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', os.getenv('django_allowed_hosts', '')).split()
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', os.getenv('django_allowed_hosts', '')).split(',') if os.getenv('DJANGO_ALLOWED_HOSTS') else ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -62,16 +62,21 @@ INSTALLED_APPS = [
     # DJ Rest Auth
     'dj_rest_auth',
     'dj_rest_auth.registration',
+    
+    # Rate limiting - temporarily disabled for testing
+    # 'django_ratelimit',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'authentication.security_headers_middleware.SecurityHeadersMiddleware',  # Custom security headers
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    # 'authentication.middleware.AuthRateLimitMiddleware',  # Temporarily disabled for testing
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',  # Add this line for django-allauth
@@ -82,7 +87,7 @@ ROOT_URLCONF = 'connectly.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -154,17 +159,29 @@ os.makedirs(STATIC_ROOT, exist_ok=True)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Cache settings
+# Cache settings - Use locmem for rate limiting support
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(BASE_DIR, 'django_cache'),
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
         'TIMEOUT': 300,  # 5 minutes default cache timeout
         'OPTIONS': {
             'MAX_ENTRIES': 1000
         }
     }
 }
+
+# Rate limiting settings - temporarily use dummy cache for testing
+RATELIMIT_ENABLE = True
+RATELIMIT_USE_CACHE = 'default'
+RATELIMIT_VIEW = 'django_ratelimit.views.ratelimited'
+
+# Add dummy cache for rate limiting in development
+CACHES['dummy'] = {
+    'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+}
+
+# For production, use Redis or Memcached
 
 # Security Settings
 SECURE_SSL_REDIRECT = bool(int(os.getenv('SECURE_SSL_REDIRECT', '1')))
@@ -177,6 +194,108 @@ SECURE_HSTS_PRELOAD = True
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'
+
+# Additional security settings to prevent information disclosure
+SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin'
+
+# Content Security Policy
+CSP_DEFAULT_SRC = ["'self'"]
+CSP_SCRIPT_SRC = ["'self'", "'unsafe-inline'", "'unsafe-eval'"]
+CSP_STYLE_SRC = ["'self'", "'unsafe-inline'"]
+CSP_IMG_SRC = ["'self'", "data:", "https:"]
+CSP_FONT_SRC = ["'self'"]
+CSP_CONNECT_SRC = ["'self'"]
+CSP_FRAME_ANCESTORS = ["'none'"]
+
+# Additional security headers
+SECURE_PERMISSIONS_POLICY = {
+    "accelerometer": [],
+    "camera": [],
+    "geolocation": [],
+    "microphone": [],
+    "payment": [],
+}
+
+# Server signature removal (handled at web server level)
+USE_TZ = True
+
+# Disable server tokens and debug info
+SILENCED_SYSTEM_CHECKS = []
+
+# Custom error handling - disable debug error pages in production
+if not DEBUG:
+    ADMINS = [('Admin', 'admin@connectly.com')]
+    MANAGERS = ADMINS
+
+# Logging configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+        'security': {
+            'format': '{asctime} SECURITY {levelname} {message}',
+            'style': '{',
+        },
+    },
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'verbose'
+        },
+        'security': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'security',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'mail_admins'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'django.security': {
+            'handlers': ['security', 'mail_admins'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        'django_ratelimit': {
+            'handlers': ['security'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'authentication': {
+            'handlers': ['security'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+}
 
 # REST Framework Settings
 REST_FRAMEWORK = {
@@ -310,12 +429,11 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
-# django-allauth settings
-ACCOUNT_EMAIL_REQUIRED = True
+# django-allauth settings (updated for v65.7.0)
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_VERIFICATION = 'none'  # For simplicity in this assignment, no email verification
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_LOGIN_METHODS = {'username', 'email'}  # Replaces ACCOUNT_AUTHENTICATION_METHOD
+ACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']  # Replaces individual required fields
 ACCOUNT_SESSION_REMEMBER = True
 
 # dj-rest-auth settings

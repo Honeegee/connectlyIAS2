@@ -1,0 +1,71 @@
+CONTROL 2 AUDIT: ROLE-BASED ACCESS CONTROL (RBAC)
+===================================================
+
+CONTROL DETAILS:
+- Area Reviewed: Django Permission Framework Implementation for Admin/User/Guest Roles
+- Type: Preventive & Detective
+- Implementation: Django permission framework with middleware-level role checks
+- Cost: ₱120,000 annually
+- Standards: OWASP A01:2021, ISO/IEC 27001 Annex A.9.1.2, CIS Control 6.1
+
+AUTOMATED TOOL: Django Security Check
+MANUAL METHOD: API Endpoint Authorization Testing
+
+=== ROLE DEFINITION ANALYSIS ===
+Location: authentication/models.py:9-16
+Roles Implemented:
+- admin: Administrator (Lines 10)
+- user: Regular User (Lines 11) 
+- guest: Guest User (Lines 12)
+
+Auto-Assignment Logic (Lines 24-29):
+- Staff users (is_staff=True) → admin role
+- Regular users → user role
+
+=== PERMISSION CLASSES IMPLEMENTED ===
+Location: posts/permissions.py
+
+1. HasAdminRole (Lines 111-122)
+   - Checks user.profile.role == 'admin' or user.is_staff
+   - Returns False for unauthenticated users
+
+2. HasUserRole (Lines 124-135)  
+   - Allows 'user' and 'admin' roles
+   - Excludes 'guest' users from access
+
+3. Custom Permission Classes Found:
+   - IsPostAuthor: Author-based permissions with admin override
+   - CanAccessPrivatePost: Privacy-based access control
+   - GuestCannotDeleteContent: Prevents guest deletions
+   - AllowAnyForPublicPostsOnly: Public content access
+
+=== VIEW-LEVEL PERMISSION ENFORCEMENT ===
+Location: posts/views.py
+
+Permission Usage:
+- PostDetailView (Line 116): [AllowAnyForPublicPostsOnly, IsPostAuthor, CanAccessPrivatePost, GuestCannotDeleteContent]
+- UserManagementView (Line 77): [IsAdminUser]
+- PostsList (Line 336): [AllowAnyForPublicPostsOnly, IsAuthorOrReadOnly, GuestCannotDeleteContent]
+- CommentManagement (Line 1045): [IsAuthenticated, IsAuthorOrReadOnly, GuestCannotDeleteContent]
+
+=== DJANGO SECURITY CHECK RESULTS ===
+File: audit_evidence/django_security_check.txt
+- No RBAC-specific security warnings detected
+- Permission framework properly configured
+
+=== MANUAL AUTHORIZATION TESTING ===
+Areas Tested:
+1. Role Assignment: ✓ Automatic profile creation with correct roles
+2. Permission Inheritance: ✓ Admin users inherit all permissions
+3. Guest Restrictions: ✓ Delete operations blocked for guest users
+4. Privacy Controls: ✓ Private post access limited to authors and admins
+
+RESULT: PASS - Control properly implemented
+
+OBSERVATIONS:
+- Comprehensive 3-tier role system (admin/user/guest)
+- Multiple custom permission classes for fine-grained control
+- Proper admin privilege escalation
+- Guest user restrictions implemented
+- Privacy-based access control functional
+- Exceeds IAS 1 requirements for RBAC implementation

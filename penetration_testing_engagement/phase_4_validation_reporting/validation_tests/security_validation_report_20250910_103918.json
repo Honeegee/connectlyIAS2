@@ -1,0 +1,37 @@
+[
+  {
+    "test": "DEBUG Mode Disabled",
+    "status": "FAIL",
+    "passed": false,
+    "details": "Error: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: http://127.0.0.1:8000/nonexistent-endpoint-404-test (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020D4199B9E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))",
+    "timestamp": "2025-09-10T10:39:06.478320"
+  },
+  {
+    "test": "Security Headers Present",
+    "status": "FAIL",
+    "passed": false,
+    "details": "Error: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: http://127.0.0.1:8000/health/ (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020D419CC230>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))",
+    "timestamp": "2025-09-10T10:39:08.545705"
+  },
+  {
+    "test": "Server Information Hiding",
+    "status": "FAIL",
+    "passed": false,
+    "details": "Error: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: http://127.0.0.1:8000/health/ (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020D419CCA70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))",
+    "timestamp": "2025-09-10T10:39:10.589650"
+  },
+  {
+    "test": "Rate Limiting Configuration",
+    "status": "PASS",
+    "passed": true,
+    "details": "Auth endpoints responding normally (rate limiting configured)",
+    "timestamp": "2025-09-10T10:39:16.728420"
+  },
+  {
+    "test": "Custom Error Pages",
+    "status": "FAIL",
+    "passed": false,
+    "details": "Error: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: http://127.0.0.1:8000/this-page-does-not-exist (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020D419CD8B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')))",
+    "timestamp": "2025-09-10T10:39:18.792608"
+  }
+]

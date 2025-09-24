@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where:*)",
+      "Bash(powershell:*)",
+      "Bash(pip install:*)",
+      "Bash(choco install:*)",
+      "Bash(choco search:*)",
+      "Bash(python manage.py runserver:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(set DATABASE_URL=postgres://postgres:postgres@localhost:5432/connectly)",
+      "Bash(docker-compose:*)",
+      "Bash(python manage.py:*)",
+      "Bash(winget install:*)",
+      "Bash(winget search:*)",
+      "Bash(dir:*)",
+      "Read(//c/Users/Honey/AppData/Local/Programs/**)",
+      "Bash(\"C:\\Program Files\\ZAP\\Zed Attack Proxy\\zap.bat\" -version)",
+      "Bash(refreshenv)",
+      "Bash(java:*)",
+      "Bash(\"C:\\Program Files\\Java\\jdk-17\\bin\\java.exe\" -version)",
+      "Read(//c/Program Files/ZAP/Zed Attack Proxy/**)",
+      "Bash(python:*)",
+      "WebSearch",
+      "Bash(openssl req:*)",
+      "Bash(curl:*)",
+      "Bash(\"C:\\Program Files\\Java\\jdk-17\\bin\\java.exe\" -Xmx512m -jar zap-2.16.1.jar -daemon -host 127.0.0.1 -port 8080)",
+      "Bash(timeout:*)",
+      "Bash(ren:*)",
+      "Read(//c/Users/Honey/Desktop/ConnectlyIPT/**)",
+      "Bash(xcopy:*)",
+      "Bash(cat:*)",
+      "Bash(git fetch:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

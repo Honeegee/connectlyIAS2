@@ -1,0 +1,450 @@
+{
+  "audit_info": {
+    "timestamp": "2025-09-09T22:25:06.464767",
+    "scanner": "Real OWASP ZAP 2.16.1 (Proxy Mode)",
+    "target": "http://127.0.0.1:8000",
+    "method": "Manual proxy-based testing of 7 controls"
+  },
+  "controls_tested": {
+    "control_1_jwt_redaction": {
+      "name": "JWT Token Redaction in Logs",
+      "previous_result": "FAIL",
+      "traffic_count": 4,
+      "endpoints_tested": 2,
+      "methods_tested": 2
+    },
+    "control_2_secret_management": {
+      "name": "Environment-Based Secret Management",
+      "previous_result": "PARTIAL",
+      "traffic_count": 3,
+      "endpoints_tested": 3,
+      "methods_tested": 1
+    },
+    "control_3_rbac": {
+      "name": "Role-Based Access Control (RBAC)",
+      "previous_result": "PASS",
+      "traffic_count": 6,
+      "endpoints_tested": 3,
+      "methods_tested": 2
+    },
+    "control_4_database_security": {
+      "name": "Database Encryption and Backup",
+      "previous_result": "FAIL",
+      "traffic_count": 4,
+      "endpoints_tested": 2,
+      "methods_tested": 2
+    },
+    "control_5_input_validation": {
+      "name": "Input Validation and SQL Injection Prevention",
+      "previous_result": "PASS",
+      "traffic_count": 6,
+      "endpoints_tested": 3,
+      "methods_tested": 2
+    },
+    "control_6_rate_limiting": {
+      "name": "Rate Limiting for Login API",
+      "previous_result": "FAIL",
+      "traffic_count": 3,
+      "endpoints_tested": 3,
+      "methods_tested": 1
+    },
+    "control_7_cache_security": {
+      "name": "Cache Key Validation and Hashing",
+      "previous_result": "PARTIAL",
+      "traffic_count": 3,
+      "endpoints_tested": 3,
+      "methods_tested": 1
+    }
+  },
+  "traffic_generated": [
+    {
+      "control": "control_1_jwt_redaction",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/auth/",
+      "status_code": 400,
+      "response_time": 0.02,
+      "content_length": 83058,
+      "timestamp": "2025-09-09T22:25:06.586487"
+    },
+    {
+      "control": "control_1_jwt_redaction",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/auth/",
+      "status_code": 400,
+      "response_time": 2.681,
+      "content_length": 83543,
+      "timestamp": "2025-09-09T22:25:09.267296"
+    },
+    {
+      "control": "control_1_jwt_redaction",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/admin/login/",
+      "status_code": 400,
+      "response_time": 0.036,
+      "content_length": 83204,
+      "timestamp": "2025-09-09T22:25:10.303922"
+    },
+    {
+      "control": "control_1_jwt_redaction",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/admin/login/",
+      "status_code": 400,
+      "response_time": 2.646,
+      "content_length": 83689,
+      "timestamp": "2025-09-09T22:25:12.950150"
+    },
+    {
+      "control": "control_2_secret_management",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/",
+      "status_code": 400,
+      "response_time": 0.042,
+      "content_length": 82950,
+      "timestamp": "2025-09-09T22:25:13.992756"
+    },
+    {
+      "control": "control_2_secret_management",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.027,
+      "content_length": 83132,
+      "timestamp": "2025-09-09T22:25:15.020267"
+    },
+    {
+      "control": "control_2_secret_management",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/",
+      "status_code": 400,
+      "response_time": 0.017,
+      "content_length": 83110,
+      "timestamp": "2025-09-09T22:25:16.038167"
+    },
+    {
+      "control": "control_3_rbac",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.017,
+      "content_length": 83132,
+      "timestamp": "2025-09-09T22:25:17.055630"
+    },
+    {
+      "control": "control_3_rbac",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.038,
+      "content_length": 83818,
+      "timestamp": "2025-09-09T22:25:17.093165"
+    },
+    {
+      "control": "control_3_rbac",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/posts/",
+      "status_code": 400,
+      "response_time": 0.017,
+      "content_length": 83171,
+      "timestamp": "2025-09-09T22:25:18.110750"
+    },
+    {
+      "control": "control_3_rbac",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/posts/",
+      "status_code": 400,
+      "response_time": 0.016,
+      "content_length": 83857,
+      "timestamp": "2025-09-09T22:25:18.126844"
+    },
+    {
+      "control": "control_3_rbac",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/",
+      "status_code": 400,
+      "response_time": 0.035,
+      "content_length": 83110,
+      "timestamp": "2025-09-09T22:25:19.163551"
+    },
+    {
+      "control": "control_3_rbac",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/",
+      "status_code": 400,
+      "response_time": 0.021,
+      "content_length": 83796,
+      "timestamp": "2025-09-09T22:25:19.184085"
+    },
+    {
+      "control": "control_4_database_security",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/",
+      "status_code": 400,
+      "response_time": 0.018,
+      "content_length": 83110,
+      "timestamp": "2025-09-09T22:25:20.202394"
+    },
+    {
+      "control": "control_4_database_security",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/",
+      "status_code": 400,
+      "response_time": 0.03,
+      "content_length": 83796,
+      "timestamp": "2025-09-09T22:25:20.232152"
+    },
+    {
+      "control": "control_4_database_security",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.03,
+      "content_length": 83132,
+      "timestamp": "2025-09-09T22:25:21.263321"
+    },
+    {
+      "control": "control_4_database_security",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.033,
+      "content_length": 83818,
+      "timestamp": "2025-09-09T22:25:21.296270"
+    },
+    {
+      "control": "control_5_input_validation",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/posts/",
+      "status_code": 400,
+      "response_time": 0.064,
+      "content_length": 83171,
+      "timestamp": "2025-09-09T22:25:22.361215"
+    },
+    {
+      "control": "control_5_input_validation",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/posts/",
+      "status_code": 400,
+      "response_time": 0.025,
+      "content_length": 83857,
+      "timestamp": "2025-09-09T22:25:22.386347"
+    },
+    {
+      "control": "control_5_input_validation",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/auth/",
+      "status_code": 400,
+      "response_time": 0.054,
+      "content_length": 83058,
+      "timestamp": "2025-09-09T22:25:23.441527"
+    },
+    {
+      "control": "control_5_input_validation",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/auth/",
+      "status_code": 400,
+      "response_time": 2.637,
+      "content_length": 83543,
+      "timestamp": "2025-09-09T22:25:26.078530"
+    },
+    {
+      "control": "control_5_input_validation",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.072,
+      "content_length": 83132,
+      "timestamp": "2025-09-09T22:25:27.150949"
+    },
+    {
+      "control": "control_5_input_validation",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/admin/",
+      "status_code": 400,
+      "response_time": 0.02,
+      "content_length": 83818,
+      "timestamp": "2025-09-09T22:25:27.171085"
+    },
+    {
+      "control": "control_6_rate_limiting",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/admin/login/",
+      "status_code": 400,
+      "response_time": 2.646,
+      "content_length": 83689,
+      "timestamp": "2025-09-09T22:25:30.817738"
+    },
+    {
+      "control": "control_6_rate_limiting",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/auth/",
+      "status_code": 400,
+      "response_time": 2.689,
+      "content_length": 83543,
+      "timestamp": "2025-09-09T22:25:34.507053"
+    },
+    {
+      "control": "control_6_rate_limiting",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/token/",
+      "status_code": 400,
+      "response_time": 0.03,
+      "content_length": 83756,
+      "timestamp": "2025-09-09T22:25:35.538035"
+    },
+    {
+      "control": "control_7_cache_security",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/posts/",
+      "status_code": 400,
+      "response_time": 0.061,
+      "content_length": 83171,
+      "timestamp": "2025-09-09T22:25:36.599682"
+    },
+    {
+      "control": "control_7_cache_security",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/",
+      "status_code": 400,
+      "response_time": 0.065,
+      "content_length": 82950,
+      "timestamp": "2025-09-09T22:25:37.665596"
+    },
+    {
+      "control": "control_7_cache_security",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/",
+      "status_code": 400,
+      "response_time": 0.06,
+      "content_length": 83110,
+      "timestamp": "2025-09-09T22:25:38.726020"
+    }
+  ],
+  "manual_findings": [
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/",
+      "description": "Debug information exposed: django.views.debug",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/",
+      "description": "Debug information exposed: debug = true",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/",
+      "description": "Debug information exposed: traceback",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/",
+      "description": "Debug information exposed: secret_key",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Server Information Disclosure",
+      "severity": "Low",
+      "url": "http://127.0.0.1:8000/",
+      "description": "Server header disclosed: WSGIServer/0.2 CPython/3.12.6",
+      "control": "control_2_secret_management"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/admin/",
+      "description": "Debug information exposed: django.views.debug",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/admin/",
+      "description": "Debug information exposed: debug = true",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/admin/",
+      "description": "Debug information exposed: traceback",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/admin/",
+      "description": "Debug information exposed: secret_key",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Server Information Disclosure",
+      "severity": "Low",
+      "url": "http://127.0.0.1:8000/admin/",
+      "description": "Server header disclosed: WSGIServer/0.2 CPython/3.12.6",
+      "control": "control_2_secret_management"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/nonexistent-page-test-404",
+      "description": "Debug information exposed: django.views.debug",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/nonexistent-page-test-404",
+      "description": "Debug information exposed: debug = true",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/nonexistent-page-test-404",
+      "description": "Debug information exposed: traceback",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Information Disclosure",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/nonexistent-page-test-404",
+      "description": "Debug information exposed: secret_key",
+      "control": "control_1_jwt_redaction"
+    },
+    {
+      "type": "Server Information Disclosure",
+      "severity": "Low",
+      "url": "http://127.0.0.1:8000/nonexistent-page-test-404",
+      "description": "Server header disclosed: WSGIServer/0.2 CPython/3.12.6",
+      "control": "control_2_secret_management"
+    },
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/admin/login/",
+      "description": "5 rapid auth attempts successful - no rate limiting",
+      "control": "control_6_rate_limiting"
+    },
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/api/auth/",
+      "description": "5 rapid auth attempts successful - no rate limiting",
+      "control": "control_6_rate_limiting"
+    },
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "High",
+      "url": "http://127.0.0.1:8000/api/token/",
+      "description": "5 rapid auth attempts successful - no rate limiting",
+      "control": "control_6_rate_limiting"
+    }
+  ]
+}

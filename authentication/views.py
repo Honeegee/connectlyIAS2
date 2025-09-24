@@ -12,6 +12,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from allauth.socialaccount.models import SocialAccount
 from singletons.logger_singleton import LoggerSingleton
+from django_ratelimit.decorators import ratelimit
 
 logger = LoggerSingleton().get_logger()
 
@@ -60,6 +61,7 @@ def oauth_callback(request):
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
+@ratelimit(key='ip', rate='5/h', method='POST', block=True)
 def google_login(request):
     """
     Endpoint to handle Google OAuth login.

@@ -1,0 +1,42 @@
+CONTROL 1 AUDIT: JWT TOKEN REDACTION IN LOGS
+=============================================
+
+CONTROL DETAILS:
+- Type: Preventive
+- Implementation: Modify logging configuration to filter/redact sensitive fields
+- Cost: ₱60,000 annually
+- Standards: NIST SP 800-92, ISO/IEC 27001 Annex A.12.4.1
+
+AUTOMATED TOOL: Bandit Python Security Linter
+MANUAL METHOD: Configuration Security Review & Logging Analysis
+
+=== CRITICAL FINDING ===
+LOCATION: authentication/views.py:87
+CODE: logger.error(f"Failed to verify Google token: {google_response.text}")
+VULNERABILITY: Google OAuth tokens exposed in error logs
+
+=== LOGGING SYSTEM ANALYSIS ===
+Logger Implementation: singletons/logger_singleton.py
+- Centralized logging system exists
+- File-based logging to logs/connectly_YYYYMMDD.log
+- No token filtering or redaction mechanism implemented
+- No sensitive data sanitization
+
+=== BANDIT FINDINGS ===
+- No direct token hardcoding issues in production code
+- Test files contain expected hardcoded tokens (acceptable)
+- HTTP request without timeout detected (medium severity)
+
+=== EVIDENCE COLLECTED ===
+1. bandit_full_report.json - Complete security scan results
+2. Source code analysis showing token exposure in logs
+3. Logging configuration review
+
+RESULT: FAIL - Control not implemented
+RISK LEVEL: CRITICAL
+
+OBSERVATIONS:
+- JWT token redaction control completely missing
+- Sensitive OAuth tokens logged in plain text during errors
+- No log sanitization mechanisms present
+- Violates NIST SP 800-92 logging security guidelines
