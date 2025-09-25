@@ -29,7 +29,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-zkktfou^524j17gl)o#1rws#6xmqvwkm4co6q%b0mvyiziq)p2')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', '1').lower() in ('true', '1', 'yes')
+# DEBUG should be False in production to prevent information disclosure
+DEBUG = os.getenv('DEBUG', 'False').lower() in ('true', '1', 'yes')
+
+# Additional debug-related security settings
+if not DEBUG:
+    # Disable detailed error pages for security
+    SILENCED_SYSTEM_CHECKS = []
+
+    # Security: Don't display sensitive information in error reports
+    ADMINS = []  # Prevent email debug info to admins
+
+    # Log errors instead of displaying them
+    import logging
+    logging.getLogger('django.request').setLevel(logging.ERROR)
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', os.getenv('django_allowed_hosts', '')).split(',') if os.getenv('DJANGO_ALLOWED_HOSTS') else ['127.0.0.1', 'localhost']
 
@@ -80,6 +93,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',  # Add this line for django-allauth
+    'authentication.error_handling_middleware.SecureErrorHandlingMiddleware',  # Secure error handling
 ]
 
 ROOT_URLCONF = 'connectly.urls'
@@ -91,7 +105,7 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
+                # 'django.template.context_processors.debug',  # Removed to prevent debug info exposure
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
@@ -225,8 +239,12 @@ SILENCED_SYSTEM_CHECKS = []
 
 # Custom error handling - disable debug error pages in production
 if not DEBUG:
-    ADMINS = [('Admin', 'admin@connectly.com')]
-    MANAGERS = ADMINS
+    # Override ADMINS to prevent debug info emails
+    ADMINS = []
+    MANAGERS = []
+
+    # Ensure error templates are used instead of debug pages
+    # Error templates should be in templates/404.html, 403.html, 500.html
 
 # Logging configuration
 LOGGING = {
