@@ -208,9 +208,10 @@ Control 1 complete and OWASP validated. Proceed to Control 2: Rate Limiting impl
 **Surface Type:** Middleware Configuration + Decorator Application
 
 **Tool/Library Used:**
-- Name: django-ratelimit + Redis
-- Version: [Check requirements.txt for django-ratelimit version]
-- Notes: Already imported in authentication/views.py:15
+- Name: django-ratelimit
+- Version: 4.1.0
+- Cache Backend: Django LocMemCache (in-memory cache)
+- Notes: Uses Django's built-in cache framework; imported in authentication/views.py:16
 
 **File(s)/Location(s):**
 - `connectly/settings.py` - MIDDLEWARE and CACHES configuration
@@ -220,26 +221,34 @@ Control 1 complete and OWASP validated. Proceed to Control 2: Rate Limiting impl
 **Implementation Summary:**
 
 **Key change(s) made:**
-1. Created `RateLimitedObtainAuthToken` class in `authentication/views.py`:
+1. Configured Django cache backend in `connectly/settings.py`:
+   - Cache backend: LocMemCache (in-memory cache)
+   - Timeout: 300 seconds (5 minutes)
+   - Max entries: 1000
+   - django-ratelimit uses this cache for rate limit tracking
+
+2. Created `RateLimitedObtainAuthToken` class in `authentication/views.py`:
    - Extends DRF's ObtainAuthToken
-   - Decorated with @method_decorator for rate limiting
+   - Decorated with @method_decorator(ratelimit(key='ip', rate='5/m', method='POST', block=True))
    - Handles Ratelimited exception and returns 429 status
    - Logs rate limit violations
 
-2. Updated `google_login` view rate limit:
-   - Changed from 5/h (per hour) to 5/m (per minute)
+3. Updated `google_login` view rate limit:
+   - Applied @ratelimit decorator with 5/m (5 per minute) rate
+   - IP-based limiting (key='ip')
+   - Block mode enabled (block=True)
    - More appropriate for brute force protection
-   - Maintains IP-based limiting
 
-3. Modified URL routing:
+4. Modified URL routing:
    - Added RateLimitedObtainAuthToken to `authentication/urls.py`
    - Commented out old unprotected token endpoint in `connectly/urls.py`
    - All token requests now go through rate-limited endpoint
 
-4. Added necessary imports:
-   - `from rest_framework.authtoken.views import ObtainAuthToken`
+5. Added necessary imports:
+   - `from django_ratelimit.decorators import ratelimit`
    - `from django_ratelimit.exceptions import Ratelimited`
    - `from django.utils.decorators import method_decorator`
+   - `from rest_framework.authtoken.views import ObtainAuthToken`
 
 **Date Implemented:** 2025-09-24
 
