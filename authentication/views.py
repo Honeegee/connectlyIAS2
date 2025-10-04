@@ -19,7 +19,7 @@ from django.utils.decorators import method_decorator
 
 logger = LoggerSingleton().get_logger()
 
-# Create your views here.
+# Added RateLimitedObtainAuthToken Class
 
 @method_decorator(ratelimit(key='ip', rate='5/m', method='POST', block=True), name='dispatch')
 class RateLimitedObtainAuthToken(ObtainAuthToken):
@@ -42,19 +42,29 @@ class RateLimitedObtainAuthToken(ObtainAuthToken):
 
 def oauth_demo(request):
     """Render the Google OAuth demo page."""
-    # Use the exact values from the Google credentials JSON
-    auth_uri = "https://accounts.google.com/o/oauth2/auth"  # From the JSON
-    client_id = "135591834469-2eh68nfpmuj5afhfqoi20fk816nmr04r.apps.googleusercontent.com"  # From the JSON
-    
+    # Load OAuth configuration from environment variables (Control #4: Secret Management)
+    import os
+    from django.core.exceptions import ImproperlyConfigured
+
+    auth_uri = os.environ.get('GOOGLE_AUTH_URI')
+    client_id = os.environ.get('GOOGLE_CLIENT_ID')
+
+    # Validate required environment variables
+    if not auth_uri or not client_id:
+        logger.error("Missing required Google OAuth environment variables")
+        raise ImproperlyConfigured(
+            "Google OAuth is not properly configured. "
+            "Please set GOOGLE_AUTH_URI and GOOGLE_CLIENT_ID in your .env file."
+        )
+
     # Get the current hostname for the redirect_uri
     host = request.get_host()
     protocol = 'https' if request.is_secure() else 'http'
     redirect_uri = f"{protocol}://{host}/api/auth/callback/"
-    
-    # Print for debugging
-    print(f"Auth URI: {auth_uri}")
-    print(f"Client ID: {client_id}")
-    print(f"Redirect URI: {redirect_uri}")
+
+    # Log configuration (secrets already redacted by logger_singleton)
+    logger.info(f"OAuth demo requested - Auth URI: {auth_uri}")
+    logger.info(f"OAuth demo requested - Redirect URI: {redirect_uri}")
     
     # Build params exactly as Google expects
     params = {
@@ -108,6 +118,7 @@ def google_login(request):
             headers={'Authorization': f'Bearer {token}'}
         )
         
+        # NEW (SECURE): for Outh sanitation error logging
         if not google_response.ok:
             logger.error(f"Failed to verify Google token: Status {google_response.status_code}")
             return Response(

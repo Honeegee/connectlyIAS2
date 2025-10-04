@@ -1,18 +1,36 @@
+"""
+Control #5: Server Information Disclosure Prevention
+
+This middleware removes server version information from HTTP response headers
+and adds comprehensive security headers to protect against various attacks.
+
+Implements:
+- Server header removal (prevents version disclosure)
+- Security headers (X-Content-Type-Options, X-Frame-Options, etc.)
+- Content Security Policy (CSP)
+- HTTP Strict Transport Security (HSTS)
+- Permissions Policy
+
+Addresses OWASP A05:2021 - Security Misconfiguration
+"""
+
 class SecurityHeadersMiddleware:
     """
     Middleware to add comprehensive security headers to prevent information disclosure
     and enhance overall application security
     """
-    
+
     def __init__(self, get_response):
         self.get_response = get_response
 
     def __call__(self, request):
         response = self.get_response(request)
-        
-        # Remove server information headers
+
+        # Control #5: Remove server information headers to prevent version disclosure
         if 'Server' in response:
             del response['Server']
+        if 'X-Powered-By' in response:
+            del response['X-Powered-By']
         
         # Add security headers
         response['X-Content-Type-Options'] = 'nosniff'

@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 import dj_database_url
+from django.core.exceptions import ImproperlyConfigured
 
 # Load environment variables
 load_dotenv()
@@ -26,7 +27,24 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-zkktfou^524j17gl)o#1rws#6xmqvwkm4co6q%b0mvyiziq)p2')
+# Control #4: Environment-Based Secret Management - No insecure fallback
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+# Validate SECRET_KEY is present (fail safely if missing)
+if not SECRET_KEY:
+    raise ImproperlyConfigured(
+        "SECRET_KEY environment variable is not set. "
+        "Please configure SECRET_KEY in your .env file for security."
+    )
+
+# Warn if using insecure development key
+if SECRET_KEY.startswith('django-insecure-'):
+    import warnings
+    warnings.warn(
+        "You are using an insecure SECRET_KEY. "
+        "Please change it in production for security.",
+        RuntimeWarning
+    )
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG should be False in production to prevent information disclosure

@@ -43,3 +43,6 @@ env
 myenv
 
 django_cache/
+
+# Claude AI Assistant
+.claude/
