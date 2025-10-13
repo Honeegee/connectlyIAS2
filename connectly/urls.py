@@ -16,50 +16,57 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from rest_framework import permissions
-from drf_yasg.views import get_schema_view
-from drf_yasg import openapi
-from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.views import obtain_auth_token
 from django.http import HttpResponse
 
-# Construct the server URL
-PROTOCOL = "https"  # Force HTTPS
-SERVER_URL = f"{PROTOCOL}://{settings.ALLOWED_HOSTS[0]}" if settings.ALLOWED_HOSTS else f"{PROTOCOL}://localhost:8000"
-
-schema_view = get_schema_view(
-    openapi.Info(
-        title="Connectly API",
-        default_version='v1',
-        description="API documentation for Connectly social media platform",
-        terms_of_service="https://www.connectly.com/terms/",
-        contact=openapi.Contact(email="contact@connectly.com"),
-        license=openapi.License(name="BSD License"),
-    ),
-    public=True,
-    permission_classes=(permissions.AllowAny,),
-    url=SERVER_URL,
-    patterns=[path('api/', include('posts.urls'))],  # Only include API endpoints
-)
-
 def health_check(request):
     return HttpResponse("OK")
 
+def root_page(request):
+    """Simple root page to help ZAP discover API endpoints"""
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Connectly API</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 40px; }
+            h1 { color: #333; }
+            ul { list-style-type: none; padding: 0; }
+            li { margin: 10px 0; }
+            a { color: #007bff; text-decoration: none; }
+            a:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <h1>Connectly API</h1>
+        <p>Available endpoints for ZAP discovery:</p>
+        <ul>
+            <li><a href="/health/">Health Check</a></li>
+            <li><a href="/api/">API Root</a></li>
+            <li><a href="/api/auth/">Authentication API</a></li>
+            <li><a href="/admin/">Admin Panel</a></li>
+        </ul>
+        <p><strong>Note:</strong> This page helps OWASP ZAP discover all API endpoints for security testing.</p>
+    </body>
+    </html>
+    """
+    return HttpResponse(html_content)
+
 urlpatterns = [
+    path('', root_page, name='root'),
     path('admin/', admin.site.urls),
 
     # Auth endpoints
+    # NEW (COMMENTED OUT):
     # path('api/auth/token/', csrf_exempt(obtain_auth_token), name='api-token-auth'),  # Replaced with rate-limited version
-    path('api/auth/', include('authentication.urls')),  # Google OAuth + Rate-limited token endpoint
+    path('api/auth/', include('authentication.urls')),  # Google OAuth + Rate-limited token endpoint + token-info
     path('api/auth/', include('dj_rest_auth.urls')),  # Regular authentication endpoints
     
     # API endpoints
     path('api/', include('posts.urls')),
     
-    # Swagger documentation
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-    path('swagger.json', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    # Health check
     path('health/', health_check, name='health_check'),
 ]

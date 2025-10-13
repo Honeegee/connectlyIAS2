@@ -9,7 +9,7 @@ import re
 from datetime import datetime
 from typing import Optional
 
-
+#added to f Implemente custom logging filter class 
 class SensitiveDataFilter(logging.Filter):
     """Filter to redact sensitive data from log records."""
 
@@ -67,19 +67,19 @@ class LoggerSingleton:
         if not os.path.exists('logs'):
             os.makedirs('logs')
 
-        # Create sensitive data filter
+        # added: Create sensitive data filter
         sensitive_filter = SensitiveDataFilter()
 
-        # Create console handler
+        # modified: Create console handler
         console_handler = logging.StreamHandler()
         console_handler.setLevel(logging.INFO)
         console_formatter = logging.Formatter(
             '%(asctime)s - %(levelname)s - %(message)s'
         )
         console_handler.setFormatter(console_formatter)
-        console_handler.addFilter(sensitive_filter)
+        console_handler.addFilter(sensitive_filter)# <-- ADDED THIS LINE
 
-        # Create file handler
+        # MODIFIED: File handler - added filter
         file_handler = logging.FileHandler(
             f'logs/connectly_{datetime.now().strftime("%Y%m%d")}.log'
         )
@@ -88,7 +88,7 @@ class LoggerSingleton:
             '%(asctime)s - %(levelname)s - [%(name)s] - %(message)s'
         )
         file_handler.setFormatter(file_formatter)
-        file_handler.addFilter(sensitive_filter)
+        file_handler.addFilter(sensitive_filter)# <-- ADDED THIS LINE
 
         # Add handlers to logger
         self.logger.addHandler(console_handler)

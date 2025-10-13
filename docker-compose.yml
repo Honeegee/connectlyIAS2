@@ -1,8 +1,7 @@
-version: "3.8"
-
 services:
   db:
     image: postgres:15
+    container_name: connectly_db_prod
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
@@ -10,29 +9,65 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
     networks:
       - connectly_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: connectly_redis_prod
+    ports:
+      - "6380:6379"
+    networks:
+      - connectly_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   web:
     build: .
+    container_name: connectly_web_prod
     volumes:
       - static_volume:/app/staticfiles
       - media_volume:/app/media
-      - .:/app # Mount the current directory for development
+      - .:/app
     ports:
       - "8000:8000"
     env_file:
       - .env
     environment:
-      - PYTHONUNBUFFERED=1 # Enable real-time logging
-      - DJANGO_SETTINGS_MODULE=connectly.settings # Ensure Django settings are loaded
+      - PYTHONUNBUFFERED=1
+      - DJANGO_SETTINGS_MODULE=connectly.settings
     depends_on:
-      - db
-    restart: always
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
     networks:
       - connectly_network
-    command: python manage.py runserver 0.0.0.0:8000 # Use Django's development server
+    command: >
+      sh -c "
+        echo 'Waiting for PostgreSQL...' &&
+        while ! pg_isready -h db -p 5432 -U postgres > /dev/null 2>&1; do
+          echo 'PostgreSQL is unavailable - sleeping' &&
+          sleep 1
+        done &&
+        echo 'PostgreSQL is ready!' &&
+        echo 'Running database migrations...' &&
+        python manage.py migrate --noinput &&
+        echo 'Collecting static files...' &&
+        python manage.py collectstatic --noinput --clear &&
+        echo 'Starting Gunicorn...' &&
+        gunicorn -c gunicorn_config.py connectly.wsgi:application
+      "
 
 volumes:
   postgres_data:

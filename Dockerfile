@@ -1,5 +1,5 @@
-# Use Python 3.11 slim image as the base
-FROM python:3.11-slim
+# Use Python 3.12 slim image as the base
+FROM python:3.12-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -15,6 +15,7 @@ RUN apt-get update \
         build-essential \
         libpq-dev \
         curl \
+        dos2unix \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -25,17 +26,21 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files
 COPY . .
 
-# Create directory for static files and set permissions
-RUN mkdir -p /app/staticfiles && \
-    chmod -R 755 /app/staticfiles
+# Create directory for static files, media, and logs and set permissions
+RUN mkdir -p /app/staticfiles /app/media /app/logs && \
+    chmod -R 755 /app/staticfiles /app/media /app/logs
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
-
-# Create non-root user and set permissions
+# Create non-root user and set permissions (but keep as root for migrations)
+# We'll stay as root to allow migrations and static file collection
 RUN useradd -m appuser && \
     chown -R appuser:appuser /app
-USER appuser
 
-# Run gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "connectly.wsgi:application"] 
+# Expose port
+EXPOSE 8000
+
+# Healthcheck
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8000/ || exit 1
+
+# Default command (can be overridden by docker-compose)
+CMD ["gunicorn", "-c", "gunicorn_config.py", "connectly.wsgi:application"] 

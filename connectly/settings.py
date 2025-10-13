@@ -79,7 +79,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'django_extensions',
-    'drf_yasg',
     'corsheaders',
     'posts',
     'authentication',  # Custom authentication app
@@ -93,9 +92,9 @@ INSTALLED_APPS = [
     # DJ Rest Auth
     'dj_rest_auth',
     'dj_rest_auth.registration',
-    
-    # Rate limiting - temporarily disabled for testing
-    # 'django_ratelimit',
+
+    # Rate limiting
+    'django_ratelimit',
 ]
 
 MIDDLEWARE = [
@@ -107,7 +106,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'authentication.middleware.AuthRateLimitMiddleware',  # Temporarily disabled for testing
+    'authentication.middleware.AuthRateLimitMiddleware',  # Re-enabled for rate limiting
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',  # Add this line for django-allauth
@@ -191,34 +190,41 @@ os.makedirs(STATIC_ROOT, exist_ok=True)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Cache settings - Use locmem for rate limiting support
+# Cache settings - Use Redis for rate limiting support
+REDIS_HOST = os.getenv('REDIS_HOST', 'redis')
+REDIS_PORT = int(os.getenv('REDIS_PORT', '6379'))
+
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-        'LOCATION': 'unique-snowflake',
-        'TIMEOUT': 300,  # 5 minutes default cache timeout
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': f'redis://{REDIS_HOST}:{REDIS_PORT}/1',
         'OPTIONS': {
-            'MAX_ENTRIES': 1000
-        }
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            'SOCKET_CONNECT_TIMEOUT': 5,
+            'SOCKET_TIMEOUT': 5,
+            'RETRY_ON_TIMEOUT': True,
+            'MAX_CONNECTIONS': 50,
+            'CONNECTION_POOL_KWARGS': {
+                'max_connections': 50,
+                'retry_on_timeout': True,
+            }
+        },
+        'KEY_PREFIX': 'connectly',
+        'TIMEOUT': 300,  # 5 minutes default cache timeout
     }
 }
 
-# Rate limiting settings - temporarily use dummy cache for testing
+# Rate limiting settings
 RATELIMIT_ENABLE = True
 RATELIMIT_USE_CACHE = 'default'
-RATELIMIT_VIEW = 'django_ratelimit.views.ratelimited'
-
-# Add dummy cache for rate limiting in development
-CACHES['dummy'] = {
-    'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
-}
-
-# For production, use Redis or Memcached
+RATELIMIT_VIEW = 'authentication.rate_limit_handler.ratelimited_error'
 
 # Security Settings
-SECURE_SSL_REDIRECT = bool(int(os.getenv('SECURE_SSL_REDIRECT', '1')))
-SESSION_COOKIE_SECURE = bool(int(os.getenv('SESSION_COOKIE_SECURE', '1')))
-CSRF_COOKIE_SECURE = bool(int(os.getenv('CSRF_COOKIE_SECURE', '1')))
+# Respect environment variables for security settings
+SECURE_SSL_REDIRECT = bool(int(os.getenv('SECURE_SSL_REDIRECT', '0')))
+SESSION_COOKIE_SECURE = bool(int(os.getenv('SESSION_COOKIE_SECURE', '0')))
+CSRF_COOKIE_SECURE = bool(int(os.getenv('CSRF_COOKIE_SECURE', '0')))
+
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
@@ -350,26 +356,6 @@ REST_FRAMEWORK = {
     ],
 }
 
-# Swagger Settings
-SWAGGER_SETTINGS = {
-    'SECURITY_DEFINITIONS': {
-        'Token': {
-            'type': 'apiKey',
-            'name': 'Authorization',
-            'in': 'header',
-            'description': 'Enter your token in the format: Token <your_token_here>'
-        }
-    },
-    'USE_SESSION_AUTH': False,
-    'JSON_EDITOR': True,
-    'SUPPORTED_SUBMIT_METHODS': ['get', 'post', 'put', 'delete', 'patch'],
-    'OPERATIONS_SORTER': 'alpha',
-    'VALIDATOR_URL': None,
-    'PERSIST_AUTH': True,
-    'REFETCH_SCHEMA_WITH_AUTH': True,
-    'FETCH_SCHEMA_WITH_QUERY': True,
-    'PROTOCOL': 'https'  # Force HTTPS protocol
-}
 
 # Password Hashers
 PASSWORD_HASHERS = [

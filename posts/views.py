@@ -17,8 +17,6 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from django.contrib.auth.models import User
 from rest_framework.exceptions import PermissionDenied
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
 from rest_framework.pagination import PageNumberPagination
 from django.db import models
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -261,18 +259,9 @@ class UserViewSet(viewsets.ModelViewSet):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAdminUser]
 
-    @swagger_auto_schema(
-        operation_description="List all users",
-        responses={200: UserSerializer(many=True)}
-    )
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    @swagger_auto_schema(
-        operation_description="Create a new user",
-        request_body=UserSerializer,
-        responses={201: UserSerializer()}
-    )
     def create(self, request, *args, **kwargs):
         try:
             serializer = self.get_serializer(data=request.data)
@@ -392,25 +381,6 @@ class PostViewSet(viewsets.ModelViewSet):
             models.Q(privacy='public') | models.Q(author=user)
         ).order_by('-created_at')
 
-    @swagger_auto_schema(
-        operation_description="List all posts",
-        responses={200: PostSerializer(many=True)},
-        manual_parameters=[
-            openapi.Parameter(
-                'page_size',
-                openapi.IN_QUERY,
-                description="Number of results to return per page",
-                type=openapi.TYPE_INTEGER,
-                default=10
-            ),
-            openapi.Parameter(
-                'privacy',
-                openapi.IN_QUERY,
-                description="Filter by privacy setting (public, private)",
-                type=openapi.TYPE_STRING
-            )
-        ]
-    )
     def list(self, request, *args, **kwargs):
         try:
             queryset = self.get_queryset()
@@ -434,31 +404,6 @@ class PostViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
-    @swagger_auto_schema(
-        operation_description="Create a new post",
-        request_body=openapi.Schema(
-            type=openapi.TYPE_OBJECT,
-            required=['content', 'post_type'],
-            properties={
-                'title': openapi.Schema(type=openapi.TYPE_STRING),
-                'content': openapi.Schema(type=openapi.TYPE_STRING),
-                'post_type': openapi.Schema(
-                    type=openapi.TYPE_STRING,
-                    enum=['text', 'image', 'video', 'link']
-                ),
-                'privacy': openapi.Schema(
-                    type=openapi.TYPE_STRING,
-                    enum=['public', 'private']
-                ),
-                'file_size': openapi.Schema(type=openapi.TYPE_INTEGER),
-                'dimensions': openapi.Schema(type=openapi.TYPE_STRING),
-                'duration': openapi.Schema(type=openapi.TYPE_INTEGER),
-                'url': openapi.Schema(type=openapi.TYPE_STRING),
-                'preview_image': openapi.Schema(type=openapi.TYPE_STRING),
-            }
-        ),
-        responses={201: PostSerializer()}
-    )
     def create(self, request, *args, **kwargs):
         # If metadata is already properly structured in the request, use it as is
         if isinstance(request.data.get('metadata'), dict):
@@ -556,30 +501,6 @@ class PostViewSet(viewsets.ModelViewSet):
                 metadata['preview_image'] = preview_image
         return metadata
 
-    @swagger_auto_schema(
-        method='post',
-        operation_description="Like a post",
-        responses={
-            200: openapi.Response(
-                description="Post liked successfully",
-                examples={
-                    "application/json": {
-                        "status": "post liked"
-                    }
-                }
-            ),
-            201: openapi.Response(
-                description="Post liked successfully",
-                examples={
-                    "application/json": {
-                        "status": "post liked"
-                    }
-                }
-            ),
-            400: openapi.Response(description="Bad request"),
-            409: openapi.Response(description="Already liked")
-        }
-    )
     @action(detail=True, methods=['post'])
     def like(self, request, pk=None):
         """
@@ -616,14 +537,6 @@ class PostViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-    @swagger_auto_schema(
-        method='delete',
-        operation_description="Unlike a post",
-        responses={
-            204: openapi.Response(description="Post unliked successfully"),
-            404: openapi.Response(description="Like not found")
-        }
-    )
     @action(detail=True, methods=['delete'])
     def unlike(self, request, pk=None):
         """
@@ -663,27 +576,6 @@ class PostViewSet(viewsets.ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-    @swagger_auto_schema(
-        method='get',
-        operation_description="Get comments for a post",
-        responses={
-            200: CommentSerializer(many=True)
-        },
-        manual_parameters=[
-            openapi.Parameter(
-                'page',
-                openapi.IN_QUERY,
-                description="Page number",
-                type=openapi.TYPE_INTEGER
-            ),
-            openapi.Parameter(
-                'page_size',
-                openapi.IN_QUERY,
-                description="Number of items per page",
-                type=openapi.TYPE_INTEGER
-            )
-        ]
-    )
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         try:
@@ -700,20 +592,6 @@ class PostViewSet(viewsets.ModelViewSet):
             logger.error(f"Error retrieving comments: {str(e)}")
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-    @swagger_auto_schema(
-        method='post',
-        operation_description="Add a comment to a post",
-        request_body=openapi.Schema(
-            type=openapi.TYPE_OBJECT,
-            required=['text'],
-            properties={
-                'text': openapi.Schema(type=openapi.TYPE_STRING),
-            }
-        ),
-        responses={
-            201: CommentSerializer()
-        }
-    )
     @action(detail=True, methods=['post'])
     def comment(self, request, pk=None):
         try:
@@ -730,70 +608,6 @@ class PostViewSet(viewsets.ModelViewSet):
             logger.error(f"Error adding comment: {str(e)}")
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-    @swagger_auto_schema(
-        method='get',
-        operation_description="Get personalized news feed",
-        responses={
-            200: PostSerializer(many=True)
-        },
-        manual_parameters=[
-            openapi.Parameter(
-                'page',
-                openapi.IN_QUERY,
-                description="Page number",
-                type=openapi.TYPE_INTEGER
-            ),
-            openapi.Parameter(
-                'page_size',
-                openapi.IN_QUERY,
-                description="Number of items per page",
-                type=openapi.TYPE_INTEGER
-            ),
-            openapi.Parameter(
-                'filter',
-                openapi.IN_QUERY,
-                description="Filter type (all, liked, own, followed)",
-                type=openapi.TYPE_STRING,
-                default='all'
-            ),
-            openapi.Parameter(
-                'post_type',
-                openapi.IN_QUERY,
-                description="Filter by post type (text, image, video, link)",
-                type=openapi.TYPE_STRING
-            ),
-            openapi.Parameter(
-                'privacy',
-                openapi.IN_QUERY,
-                description="Filter by privacy setting (public, private)",
-                type=openapi.TYPE_STRING
-            ),
-            openapi.Parameter(
-                'metadata_key',
-                openapi.IN_QUERY,
-                description="Filter by specific metadata key (e.g., 'file_size', 'dimensions', 'duration', 'url')",
-                type=openapi.TYPE_STRING
-            ),
-            openapi.Parameter(
-                'metadata_value',
-                openapi.IN_QUERY,
-                description="Filter by metadata value (used with metadata_key)",
-                type=openapi.TYPE_STRING
-            ),
-            openapi.Parameter(
-                'metadata_min',
-                openapi.IN_QUERY,
-                description="Filter by minimum metadata value (used with metadata_key for range filtering)",
-                type=openapi.TYPE_STRING
-            ),
-            openapi.Parameter(
-                'metadata_max',
-                openapi.IN_QUERY,
-                description="Filter by maximum metadata value (used with metadata_key for range filtering)",
-                type=openapi.TYPE_STRING
-            )
-        ]
-    )
     @action(detail=False, methods=['get'])
     def feed(self, request):
         try:
@@ -1057,25 +871,9 @@ class CommentViewSet(viewsets.ModelViewSet):
             return [IsAuthenticated(), IsAuthorOrReadOnly(), GuestCannotDeleteContent()]
         return [IsAuthenticated()]
 
-    @swagger_auto_schema(
-        operation_description="List all comments",
-        responses={200: CommentSerializer(many=True)}
-    )
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    @swagger_auto_schema(
-        operation_description="Create a new comment",
-        request_body=openapi.Schema(
-            type=openapi.TYPE_OBJECT,
-            required=['content', 'post'],
-            properties={
-                'content': openapi.Schema(type=openapi.TYPE_STRING),
-                'post': openapi.Schema(type=openapi.TYPE_INTEGER),
-            }
-        ),
-        responses={201: CommentSerializer()}
-    )
     def create(self, request, *args, **kwargs):
         return super().create(request, *args, **kwargs)
 

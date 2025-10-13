@@ -27,10 +27,16 @@ class SecurityHeadersMiddleware:
         response = self.get_response(request)
 
         # Control #5: Remove server information headers to prevent version disclosure
-        if 'Server' in response:
+        # Use both dict-style and attribute access to ensure removal
+        try:
             del response['Server']
-        if 'X-Powered-By' in response:
+        except KeyError:
+            pass
+
+        try:
             del response['X-Powered-By']
+        except KeyError:
+            pass
         
         # Add security headers
         response['X-Content-Type-Options'] = 'nosniff'
@@ -42,17 +48,21 @@ class SecurityHeadersMiddleware:
         response['Cross-Origin-Opener-Policy'] = 'same-origin'
         response['Cross-Origin-Resource-Policy'] = 'same-origin'
         
-        # Content Security Policy
+        # Content Security Policy - Secure configuration without unsafe directives
         csp_policy = (
             "default-src 'self'; "
-            "script-src 'self' 'unsafe-inline' 'unsafe-eval'; "
-            "style-src 'self' 'unsafe-inline'; "
-            "img-src 'self' data: https:; "
+            "script-src 'self'; "  # No unsafe-inline or unsafe-eval
+            "style-src 'self'; "   # No unsafe-inline
+            "img-src 'self' data:; "
             "font-src 'self'; "
             "connect-src 'self'; "
             "frame-ancestors 'none'; "
             "base-uri 'self'; "
-            "form-action 'self'"
+            "form-action 'self'; "
+            "object-src 'none'; "
+            "media-src 'self'; "
+            "worker-src 'self'; "
+            "manifest-src 'self'"
         )
         response['Content-Security-Policy'] = csp_policy
         

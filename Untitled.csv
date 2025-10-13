@@ -1,0 +1,1001 @@
+ID,Req. Timestamp,Resp. Timestamp,Method,URL,Code,Reason,RTT,Size Resp. Header,Size Resp. Body
+5207,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000,200,OK,3,852,1043
+5208,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5210,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,3,859,1540
+5211,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=Set-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99,429,Too Many Requests,2,858,143
+5212,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,3,859,1540
+5213,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,2,883,0
+5214,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5216,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login,302,Found,3,1015,0
+5217,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=any%0D%0ASet-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99,429,Too Many Requests,3,858,143
+5218,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,3,881,0
+5219,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=Set-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3,200,OK,7,1107,4229
+5220,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5222,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,4,859,1540
+5223,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=any%3F%0D%0ASet-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99,429,Too Many Requests,2,858,143
+5224,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,3,884,0
+5225,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=any%0D%0ASet-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3,200,OK,9,1107,4238
+5226,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5228,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,5,883,0
+5229,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=any%0ASet-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99,429,Too Many Requests,2,858,143
+5230,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+5231,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=any%3F%0D%0ASet-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3,200,OK,8,1107,4302
+5232,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,5,859,1540
+5233,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,7,1107,4184
+5235,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=any%3F%0ASet-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99,429,Too Many Requests,2,858,143
+5236,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=any%0ASet-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3,200,OK,8,1107,4235
+5237,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,4,859,1540
+5238,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5239,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=any%3F%0ASet-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3,200,OK,6,1107,4298
+5241,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,5,859,1540
+5242,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=any%0D%0ASet-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99%0D%0A,429,Too Many Requests,3,858,143
+5243,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,3,859,1540
+5244,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=any%0D%0ASet-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3%0D%0A,200,OK,6,1107,4244
+5245,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,3,859,1540
+5246,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5248,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=any%3F%0D%0ASet-cookie%3A+Tamper%3De9b673c3-8984-4a96-8f84-257efe752f99%0D%0A,429,Too Many Requests,3,858,143
+5249,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,4,859,1540
+5250,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=any%3F%0D%0ASet-cookie%3A+Tamper%3Df0e19647-2c99-47c4-9676-3eaf203f6df3%0D%0A,200,OK,9,1107,4310
+5251,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5252,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,2,885,0
+5253,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5254,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5255,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5256,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,8,858,143
+5257,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5258,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5259,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5261,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5262,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5264,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5265,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5267,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5268,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5270,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5271,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5273,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5274,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,3,1107,4184
+5276,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5277,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5279,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5280,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5282,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5283,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5285,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5286,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5288,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5289,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5291,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5292,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5294,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5295,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5297,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5298,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5300,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,5,858,143
+5301,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5303,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5304,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,3,1107,4184
+5306,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5307,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5309,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5310,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5312,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5313,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,4,1107,4184
+5315,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5316,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5318,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5319,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5321,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,4,858,143
+5322,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+5323,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,2,859,1540
+5324,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5326,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,2,859,1540
+5327,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,4,858,143
+5328,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,20,883,0
+5329,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,25,1107,4184
+5331,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login,302,Found,7,1015,0
+5332,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5333,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,2,881,0
+5334,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,7,1107,4184
+5335,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5337,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,5,859,1540
+5338,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5339,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,3,884,0
+5340,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?=,200,OK,7,1107,4173
+5341,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,4,883,0
+5342,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5344,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/admin/login/?next=,200,OK,6,1107,4170
+5345,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+5346,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:38 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5347,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,3,859,1540
+5348,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%40,200,OK,6,1107,4174
+5349,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,3,859,1540
+5350,Sun Oct 12 16:54:38 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,7,1107,4184
+5352,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,3,859,1540
+5353,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%2B,200,OK,7,1107,4174
+5354,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,4,858,143
+5355,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,3,859,1540
+5356,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,2,859,1540
+5357,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%00,200,OK,5,1107,4173
+5358,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,2,859,1540
+5359,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%7C,200,OK,11,1107,4174
+5360,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,4,885,0
+5361,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,3,852,1043
+5362,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/elmah.axd,404,Not Found,3,859,1540
+5363,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/trace.axd,302,Found,5,1025,0
+5364,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,3,859,1540
+5365,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/trace.axd,404,Not Found,4,859,1540
+5366,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,2,859,1540
+5367,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,9,883,0
+5368,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/trace.axd,404,Not Found,9,859,1540
+5369,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/trace.axd,404,Not Found,8,859,1540
+5370,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,302,Found,2,1015,0
+5371,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/trace.axd,302,Found,3,1019,0
+5372,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,2,881,0
+5373,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/trace.axd,404,Not Found,3,859,1540
+5374,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,4,859,1540
+5375,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,3,884,0
+5376,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/trace.axd,404,Not Found,3,859,1540
+5377,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,2,883,0
+5378,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/trace.axd,404,Not Found,2,859,1540
+5379,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+5380,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/trace.axd,404,Not Found,3,859,1540
+5381,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,3,859,1540
+5382,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,2,859,1540
+5383,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/trace.axd,404,Not Found,2,859,1540
+5384,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/trace.axd,404,Not Found,3,859,1540
+5385,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/trace.axd,404,Not Found,3,859,1540
+5386,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,4,859,1540
+5387,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,2,859,1540
+5388,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/trace.axd,404,Not Found,2,859,1540
+5389,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/trace.axd,404,Not Found,3,859,1540
+5390,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,4,859,1540
+5391,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/trace.axd,404,Not Found,3,859,1540
+5392,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,2,859,1540
+5393,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/trace.axd,404,Not Found,3,859,1540
+5394,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,2,885,0
+5395,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger/trace.axd,404,Not Found,3,859,1540
+5396,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+5397,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.htaccess,302,Found,2,1025,0
+5398,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.htaccess,404,Not Found,2,859,1540
+5399,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,4,859,1540
+5400,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,2,859,1540
+5401,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/.htaccess,404,Not Found,3,859,1540
+5402,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/.htaccess,404,Not Found,3,859,1540
+5403,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,3,883,0
+5404,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,302,Found,3,1015,0
+5405,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/.htaccess,302,Found,3,1019,0
+5406,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,2,881,0
+5407,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/.htaccess,404,Not Found,3,884,23
+5408,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,3,859,1540
+5409,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,3,884,0
+5410,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/.htaccess,404,Not Found,2,859,1540
+5411,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,2,883,0
+5412,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/.htaccess,404,Not Found,2,859,1540
+5413,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/.htaccess,404,Not Found,3,859,1540
+5414,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,3,859,1540
+5415,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,2,859,1540
+5416,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/.htaccess,404,Not Found,2,859,1540
+5417,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,3,859,1540
+5418,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/.htaccess,404,Not Found,2,859,1540
+5419,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/.htaccess,404,Not Found,4,859,1540
+5420,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,5,859,1540
+5421,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,2,859,1540
+5422,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/.htaccess,404,Not Found,2,859,1540
+5423,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/.htaccess,404,Not Found,3,859,1540
+5424,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,4,859,1540
+5425,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,3,859,1540
+5426,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/.htaccess,404,Not Found,3,859,1540
+5427,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/.htaccess,404,Not Found,2,859,1540
+5428,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,2,885,0
+5429,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger/.htaccess,404,Not Found,2,859,1540
+5430,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+5431,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.env,302,Found,1,1020,0
+5432,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,1,859,1540
+5433,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.env,404,Not Found,2,859,1540
+5434,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,3,859,1540
+5435,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/.env,404,Not Found,2,859,1540
+5436,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/.env,404,Not Found,2,859,1540
+5437,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,3,883,0
+5438,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,302,Found,3,1015,0
+5439,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/.env,302,Found,2,1014,0
+5440,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,3,881,0
+5441,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,3,859,1540
+5442,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/.env,404,Not Found,2,884,23
+5443,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,2,884,0
+5444,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/.env,404,Not Found,2,859,1540
+5445,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,2,883,0
+5446,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/.env,404,Not Found,2,859,1540
+5447,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+5448,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/.env,404,Not Found,2,859,1540
+5449,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,3,859,1540
+5450,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/.env,404,Not Found,1,859,1540
+5451,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,2,859,1540
+5452,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/.env,404,Not Found,3,859,1540
+5453,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/.env,404,Not Found,3,859,1540
+5454,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,3,859,1540
+5455,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,2,859,1540
+5456,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/.env,404,Not Found,2,859,1540
+5457,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,3,859,1540
+5458,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/.env,404,Not Found,3,859,1540
+5459,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/.env,404,Not Found,2,859,1540
+5460,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,1,859,1540
+5461,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/.env,404,Not Found,2,859,1540
+5462,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,3,885,0
+5463,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger/.env,404,Not Found,2,859,1540
+5464,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/zap2341198156036330946,302,Found,2,1038,0
+5465,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,4,852,1043
+5466,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,7,1107,4184
+5467,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/actuator/health,200,OK,3,1107,4226
+5469,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,4,859,1540
+5470,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.zap364280849732647676,302,Found,6,1038,0
+5471,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%3C,429,Too Many Requests,3,858,143
+5472,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,3,859,1540
+5473,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/lfm.php,302,Found,4,1023,0
+5474,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/actuator/health,200,OK,3,1107,4226
+5475,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,7,1107,4184
+5477,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,5,883,0
+5478,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.idea/WebServers.xml,302,Found,7,1036,0
+5479,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E,429,Too Many Requests,2,858,143
+5480,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,302,Found,4,1015,0
+5481,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/config/databases.yml,302,Found,2,1036,0
+5482,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/config/database.yml,302,Found,3,1035,0
+5483,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5485,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,5,881,0
+5486,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.git/config,302,Found,2,1027,0
+5487,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%3C,200,OK,7,1107,4177
+5488,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=system-property%28%27xsl%3Avendor%27%29%2F%3E,429,Too Many Requests,4,858,143
+5489,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.svn/entries,302,Found,2,1028,0
+5490,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,5,859,1540
+5491,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5493,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.svn/wc.db,302,Found,5,1026,0
+5494,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E,200,OK,7,1107,4328
+5495,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,5,884,0
+5496,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--,429,Too Many Requests,4,858,143
+5497,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/CVS/root,302,Found,4,1024,0
+5498,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,3,883,0
+5499,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=system-property%28%27xsl%3Avendor%27%29%2F%3E,200,OK,6,1107,4259
+5500,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/server-status,302,Found,4,1029,0
+5501,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,5,859,1540
+5502,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,8,1107,4184
+5504,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/core,302,Found,3,1020,0
+5505,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--,429,Too Many Requests,2,858,143
+5506,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%22%2F%3E%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--,200,OK,8,1107,4363
+5507,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,5,859,1540
+5508,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/sftp-config.json,302,Found,4,1032,0
+5509,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22system-property%28%27xsl%3Avendor%27%29%22%2F%3E%3C%21--,200,OK,6,1107,4343
+5510,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5512,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,5,859,1540
+5513,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/WS_FTP.ini,302,Found,6,1026,0
+5514,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22document%28%27http%3A%2F%2Flocalhost%3A22%27%29%22%2F%3E,429,Too Many Requests,4,858,143
+5515,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,3,859,1540
+5516,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22document%28%27http%3A%2F%2Flocalhost%3A22%27%29%22%2F%3E,200,OK,7,1107,4338
+5517,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/ws_ftp.ini,302,Found,4,1026,0
+5518,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,3,859,1540
+5519,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,8,1107,4184
+5521,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/WS_FTP.INI,302,Found,8,1026,0
+5522,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,8,859,1540
+5523,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%3Cxsl%3Avariable+name%3D%22rtobject%22+select%3D%22runtime%3AgetRuntime%28%29%22%2F%3E%0A%3Cxsl%3Avariable+name%3D%22process%22+select%3D%22runtime%3Aexec%28%24rtobject%2C%27erroneous_command%27%29%22%2F%3E%0A%3Cxsl%3Avariable+name%3D%22waiting%22+select%3D%22process%3AwaitFor%28%24process%29%22%2F%3E%0A%3Cxsl%3Avalue-of+select%3D%22%24process%22%2F%3E,200,OK,11,1107,4874
+5524,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%3Cxsl%3Avariable+name%3D%22rtobject%22+select%3D%22runtime%3AgetRuntime%28%29%22%2F%3E%0A%3Cxsl%3Avariable+name%3D%22process%22+select%3D%22runtime%3Aexec%28%24rtobject%2C%27erroneous_command%27%29%22%2F%3E%0A%3Cxsl%3Avariable+name%3D%22waiting%22+select%3D%22process%3AwaitFor%28%24process%29%22%2F%3E%0A%3Cxsl%3Avalue-of+select%3D%22%24process%22%2F%3E,429,Too Many Requests,6,858,143
+5525,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/filezilla.xml,302,Found,6,1029,0
+5526,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,3,859,1540
+5527,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22php%3Afunction%28%27exec%27%2C%27erroneous_command+2%3E%26amp%3B1%27%29%22%2F%3E,200,OK,6,1107,4397
+5528,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/sitemanager.xml,302,Found,5,1031,0
+5529,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,3,885,0
+5530,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,7,1107,4184
+5532,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/FileZilla.xml,302,Found,3,1029,0
+5533,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=%3Cxsl%3Avalue-of+select%3D%22php%3Afunction%28%27exec%27%2C%27erroneous_command+2%3E%26amp%3B1%27%29%22%2F%3E,429,Too Many Requests,2,858,143
+5534,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/winscp.ini,302,Found,3,1026,0
+5535,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5536,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/WinSCP.ini,302,Found,3,1026,0
+5537,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5538,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.DS_Store,302,Found,2,1025,0
+5539,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5540,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.php_cs.cache,302,Found,3,1029,0
+5541,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5542,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/DEADJOE,302,Found,3,1023,0
+5543,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5544,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/sites/default/private/files/backup_migrate/scheduled/test.txt,302,Found,2,1077,0
+5545,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5546,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/app/etc/local.xml,302,Found,2,1033,0
+5547,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5548,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/server.key,302,Found,3,1026,0
+5549,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5550,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/privatekey.key,302,Found,2,1030,0
+5551,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/myserver.key,302,Found,2,1028,0
+5552,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5554,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/key.pem,302,Found,3,1023,0
+5555,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5556,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/id_rsa,302,Found,3,1022,0
+5557,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/id_dsa,302,Found,2,1022,0
+5558,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5560,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.ssh/id_rsa,302,Found,3,1027,0
+5561,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5562,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.ssh/id_dsa,302,Found,2,1027,0
+5563,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/adminer.php,302,Found,3,1027,0
+5564,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5566,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/vb_test.php,302,Found,3,1027,0
+5567,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5568,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/CHANGELOG.txt,302,Found,2,1029,0
+5569,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/sites/default/files/.ht.sqlite,302,Found,2,1046,0
+5570,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5572,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/composer.json,302,Found,2,1029,0
+5573,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,3,858,143
+5574,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/composer.lock,302,Found,2,1029,0
+5575,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/vim_settings.xml,302,Found,2,1032,0
+5576,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5578,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/server-info,302,Found,3,1027,0
+5579,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5580,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/phpinfo.php,302,Found,3,1027,0
+5581,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/info.php,302,Found,2,1024,0
+5582,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/i.php,302,Found,2,1021,0
+5583,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,5,1107,4184
+5585,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/test.php,302,Found,2,1024,0
+5586,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,1,858,143
+5587,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/_wpeprivate/config.json,302,Found,2,1039,0
+5588,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/_framework/blazor.boot.json,302,Found,2,1043,0
+5589,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5591,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.hg,302,Found,3,1019,0
+5592,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5593,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/.bzr,302,Found,3,1020,0
+5594,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/._darcs,302,Found,2,1023,0
+5595,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5597,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/BitKeeper,302,Found,2,1025,0
+5598,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,2,858,143
+5599,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+5600,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,2,859,1540
+5601,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?csrfmiddlewaretoken=bngRU9Q21arTwE8uRtMO4fp9sbtbnsD6PC9tgqRN4SGSoCLi6ifP6GZ5u9LkRizu&next=/admin/&password=ZAP&username=ZAP,200,OK,4,1107,4307
+5602,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,3,859,1540
+5603,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,2,883,0
+5604,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,302,Found,3,1015,0
+5605,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,2,881,0
+5606,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,3,859,1540
+5607,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,2,884,0
+5608,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,2,883,0
+5609,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+5610,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,2,859,1540
+5611,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,2,859,1540
+5612,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,2,859,1540
+5613,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,2,859,1540
+5614,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,2,859,1540
+5615,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,2,859,1540
+5616,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,2,885,0
+5617,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+5618,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,2,859,1540
+5619,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,6,1107,4184
+5620,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,3,852,1043
+5622,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,4,859,1540
+5623,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,3,859,1540
+5624,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,4,852,1043
+5625,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,4,858,143
+5627,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,3,859,1540
+5628,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,3,859,1540
+5629,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,3,859,1540
+5630,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,5,883,0
+5631,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,7,852,1043
+5632,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,6,852,1043
+5633,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,6,859,1540
+5634,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,5,859,1540
+5635,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,7,859,1540
+5636,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,302,Found,6,1015,0
+5637,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,10,1107,4184
+5639,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,10,852,1043
+5640,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,10,852,1043
+5641,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,9,859,1540
+5642,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,10,859,1540
+5643,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,7,859,1540
+5644,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,8,881,0
+5645,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,11,1107,4184
+5647,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,10,858,143
+5649,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,10,852,1043
+5650,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,11,852,1043
+5651,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,10,1107,4184
+5653,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,12,859,1540
+5654,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,13,859,1540
+5655,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,13,859,1540
+5656,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,12,859,1540
+5657,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,14,920,58
+5658,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,10,1107,4194
+5660,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,200,OK,7,1107,4184
+5662,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,15,852,1043
+5663,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,16,1107,4184
+5665,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,15,852,1043
+5666,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,15,859,1540
+5667,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,15,859,1540
+5668,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,20,1107,4184
+5670,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,17,859,1540
+5671,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,12,920,58
+5673,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,17,859,1540
+5674,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,17,884,0
+5675,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,19,859,1540
+5676,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,18,920,58
+5677,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,13,852,1043
+5678,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,12,852,1043
+5679,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,11,859,1540
+5680,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,12,859,1540
+5681,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,13,858,143
+5683,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,13,859,1540
+5684,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,13,859,1540
+5685,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,17,1107,4184
+5687,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,14,883,0
+5688,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,14,859,1540
+5689,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,15,849,2
+5690,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,15,920,58
+5691,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,14,852,1043
+5692,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,14,852,1043
+5693,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,14,859,1540
+5694,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,13,1107,4184
+5696,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,12,1107,4194
+5698,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,17,859,1540
+5699,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,16,859,1540
+5700,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,15,859,1540
+5701,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,13,849,2
+5703,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,16,859,1540
+5704,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,16,894,930
+5705,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,17,859,1540
+5706,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,18,859,1540
+5707,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,18,859,1540
+5708,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,19,849,2
+5709,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,18,920,58
+5710,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,18,852,1043
+5711,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,18,852,1043
+5712,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,18,859,1540
+5713,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,200,OK,12,1107,4184
+5715,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,18,1107,4184
+5717,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,17,859,1540
+5718,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,17,859,1540
+5719,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,20,1107,4184
+5721,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,19,859,1540
+5722,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,17,859,1540
+5723,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,200,OK,15,894,930
+5725,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,18,859,1540
+5726,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,19,894,930
+5727,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,18,859,1540
+5728,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,21,859,1540
+5729,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,20,859,1540
+5730,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,20,849,2
+5731,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,22,920,58
+5732,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,21,852,1043
+5733,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,21,852,1043
+5734,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,15,920,58
+5736,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,21,859,1540
+5737,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,18,859,1540
+5738,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,19,858,143
+5740,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,17,859,1540
+5741,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,16,859,1540
+5742,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,17,859,1540
+5743,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,17,859,1540
+5744,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,18,859,1540
+5745,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,20,894,930
+5746,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,20,859,1540
+5747,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,19,1107,4184
+5749,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,22,859,1540
+5750,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,22,859,1540
+5751,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,22,849,2
+5752,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,26,1107,4184
+5754,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,24,920,58
+5755,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,25,852,1043
+5756,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,25,852,1043
+5757,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,24,859,1540
+5758,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,24,859,1540
+5759,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,23,859,1540
+5760,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,23,859,1540
+5761,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,16,849,2
+5763,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,23,976,22154
+5764,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,17,1107,4194
+5765,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,25,859,1540
+5767,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,26,974,2808
+5768,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,27,859,1540
+5769,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,28,859,1540
+5770,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,29,973,951
+5771,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,29,974,2810
+5772,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,31,976,16632
+5773,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,29,894,930
+5774,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,33,859,1540
+5775,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,29,859,1540
+5776,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,28,859,1540
+5777,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,28,859,1540
+5778,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,26,849,2
+5779,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,28,920,58
+5780,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000,200,OK,27,852,1043
+5781,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,29,852,1043
+5782,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,28,859,1540
+5783,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,33,1107,4184
+5785,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,30,859,1540
+5786,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,29,859,1540
+5787,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,26,976,22154
+5788,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,29,859,1540
+5789,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,24,974,2808
+5790,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,26,859,1540
+5791,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,27,859,1540
+5792,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,26,859,1540
+5793,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,27,981,3063
+5794,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,31,1107,4184
+5796,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,30,859,1540
+5797,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,30,981,1653
+5798,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,30,974,2810
+5799,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,31,973,951
+5800,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,29,976,16632
+5801,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,200,OK,30,894,930
+5803,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,30,894,930
+5804,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,31,859,1540
+5805,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,32,859,1540
+5806,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,31,859,1540
+5807,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,31,859,1540
+5808,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,33,849,2
+5809,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,200,OK,21,1107,4184
+5811,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,26,920,58
+5813,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,32,920,58
+5814,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,31,852,1043
+5815,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,33,859,1540
+5816,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,31,858,143
+5818,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/.well-known/appspecific/com.chrome.devtools.json,404,Not Found,31,859,1540
+5819,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,30,976,22154
+5820,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,32,859,1540
+5821,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,33,1107,4184
+5822,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,33,974,2808
+5824,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,32,859,1540
+5825,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,35,859,1540
+5826,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,31,983,56904
+5827,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,33,859,1540
+5828,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,33,859,1540
+5829,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,34,981,3063
+5830,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,34,859,1540
+5831,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,34,981,1653
+5832,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,34,974,2810
+5833,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,35,973,951
+5834,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,35,976,16632
+5835,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,36,894,930
+5836,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,35,859,1540
+5837,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,52,981,2093
+5838,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,39,859,1540
+5839,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,31,849,2
+5840,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,42,859,1540
+5841,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,40,859,1540
+5843,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,39,1107,4184
+5845,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,41,849,2
+5846,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/,200,OK,52,852,1043
+5847,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,43,974,2808
+5848,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,33,1107,4194
+5849,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,52,920,58
+5851,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,45,859,1540
+5852,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,46,976,22154
+5853,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,43,859,1540
+5854,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,45,859,1540
+5855,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,44,859,1540
+5856,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,45,983,56904
+5857,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,45,859,1540
+5858,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,45,959,4969
+5859,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,52,981,3063
+5860,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,50,859,1540
+5861,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,50,981,1653
+5862,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,55,1107,4184
+5864,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,53,974,2810
+5865,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,34,859,1540
+5866,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,200,OK,39,894,930
+5867,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,45,920,58
+5868,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,35,920,58
+5869,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,62,894,930
+5870,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,67,973,951
+5871,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,62,859,1540
+5874,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,54,859,1540
+5875,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,55,981,2093
+5876,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,49,849,2
+5877,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,53,859,1540
+5878,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,34,859,1540
+5879,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,53,859,1540
+5880,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,34,859,1540
+5881,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,31,859,1540
+5882,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,31,983,56904
+5883,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,36,974,2808
+5884,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,35,976,22154
+5885,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,66,976,16632
+5886,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,33,1107,4184
+5888,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,31,859,1540
+5889,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,31,959,4969
+5890,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,26,981,3063
+5891,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,27,859,1540
+5892,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,27,981,1653
+5893,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,25,974,2810
+5894,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,27,858,143
+5896,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,12,859,1540
+5897,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,200,OK,45,1107,4184
+5899,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,65,1107,4184
+5901,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,29,849,2
+5903,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,18,920,58
+5904,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,19,894,930
+5905,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,19,973,951
+5906,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,21,859,1540
+5907,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,20,859,1540
+5908,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,22,981,2093
+5909,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,22,849,2
+5910,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,24,859,1540
+5911,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,25,859,1540
+5912,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,28,859,1540
+5913,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,29,1107,4194
+5915,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,29,859,1540
+5916,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,30,859,1540
+5917,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,30,983,56904
+5918,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,32,976,22154
+5919,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,32,974,2808
+5920,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,32,976,16632
+5921,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,33,959,4969
+5922,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,34,859,1540
+5923,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,33,981,3063
+5924,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,32,981,1653
+5925,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,32,974,2810
+5926,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,35,859,1540
+5927,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,32,859,1540
+5928,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/,401,Unauthorized,28,920,58
+5929,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,28,973,951
+5930,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,37,1107,4184
+5932,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,31,894,930
+5933,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,29,859,1540
+5934,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,29,859,1540
+5935,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,30,849,2
+5936,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,31,981,2093
+5937,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,33,1107,4184
+5939,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,31,859,1540
+5940,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,32,859,1540
+5941,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,32,859,1540
+5942,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,32,859,1540
+5943,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,30,859,1540
+5944,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,31,983,56904
+5945,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,31,976,22154
+5946,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,30,974,2808
+5947,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,31,976,16632
+5948,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,200,OK,33,894,930
+5950,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,34,920,58
+5952,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,30,859,1540
+5953,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,30,959,4969
+5954,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,30,981,1653
+5955,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,30,981,3063
+5956,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,29,859,1540
+5957,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,31,974,2810
+5958,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,27,973,951
+5959,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,26,894,930
+5960,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,27,859,1540
+5961,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,26,849,2
+5962,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,27,859,1540
+5963,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,26,981,2093
+5964,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api/auth/,404,Not Found,25,859,1540
+5965,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,26,858,143
+5967,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,27,859,1540
+5968,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,30,1107,4184
+5970,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,34,849,2
+5972,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,28,859,1540
+5973,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,28,859,1540
+5974,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,32,1107,4184
+5976,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,30,859,1540
+5977,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,28,983,56904
+5978,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,28,976,22154
+5979,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,29,974,2808
+5980,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,27,976,16632
+5981,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,27,959,4969
+5982,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,28,859,1540
+5983,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,26,981,3063
+5984,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,27,981,1653
+5985,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,28,974,2810
+5986,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,27,973,951
+5987,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,29,859,1540
+5988,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,29,894,930
+5989,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,28,859,1540
+5990,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,29,859,1540
+5991,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health/,200,OK,30,849,2
+5992,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,27,1107,4194
+5994,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,30,981,2093
+5995,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,27,859,1540
+5996,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,25,859,1540
+5997,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,25,859,1540
+5998,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,200,OK,32,1107,4184
+6000,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,26,859,1540
+6001,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,26,983,56904
+6002,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,25,976,22154
+6003,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,28,976,16632
+6004,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,28,974,2808
+6005,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,34,959,4969
+6006,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,33,859,1540
+6007,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,32,981,3063
+6008,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,33,1107,4184
+6009,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,32,981,1653
+6011,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,31,974,2810
+6012,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,32,973,951
+6013,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,33,859,1540
+6014,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc/,200,OK,33,894,930
+6015,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,33,859,1540
+6016,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/sitemap.xml,404,Not Found,33,859,1540
+6017,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,30,981,2093
+6018,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,35,1107,4184
+6020,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,30,920,58
+6022,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,200,OK,30,894,930
+6024,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/robots.txt,404,Not Found,31,859,1540
+6025,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,28,859,1540
+6026,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,31,859,1540
+6027,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,29,859,1540
+6028,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,28,983,56904
+6029,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,28,976,22154
+6030,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,25,976,16632
+6031,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,25,974,2808
+6032,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,22,981,2566
+6033,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,21,974,1047
+6034,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,22,859,1540
+6035,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,25,959,4969
+6036,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,27,859,1540
+6037,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,28,981,3063
+6038,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,28,986,1042511
+6039,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,33,849,2
+6040,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,29,858,143
+6041,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,29,981,1653
+6044,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,33,974,2810
+6045,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,34,1107,4184
+6047,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,35,973,951
+6048,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static,404,Not Found,31,859,1540
+6049,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,35,859,1540
+6050,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,30,981,2093
+6051,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,27,859,1540
+6052,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,27,859,1540
+6053,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,27,983,56904
+6054,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,27,976,22154
+6055,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,28,859,1540
+6056,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,28,976,16632
+6057,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,27,981,2566
+6058,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,28,974,2808
+6059,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,28,974,1047
+6060,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,28,975,2715
+6061,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,30,859,1540
+6062,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,29,957,628
+6063,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,31,985,322863
+6064,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,30,959,4969
+6065,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,40,859,1540
+6066,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,33,981,1653
+6067,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,38,1107,4184
+6068,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,38,981,3063
+6070,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,44,986,1046583
+6071,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,27,981,3063
+6072,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,27,859,1540
+6073,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,27,981,1653
+6074,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/redoc,200,OK,38,894,930
+6075,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,37,920,58
+6076,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,35,985,322863
+6077,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,38,1107,4184
+6078,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,32,959,4969
+6079,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,36,957,628
+6080,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,35,859,1540
+6081,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,32,975,2715
+6082,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,32,974,1047
+6083,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,34,976,16632
+6084,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,32,981,2566
+6085,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/dark_mode.css,200,OK,31,974,2808
+6086,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,33,859,1540
+6087,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/base.css,200,OK,32,976,22154
+6088,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,32,983,56904
+6089,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,33,859,1540
+6090,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,34,859,1540
+6091,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,33,981,2093
+6092,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,39,986,1042511
+6093,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,34,973,951
+6094,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/login,200,OK,31,1107,4194
+6095,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,35,974,2810
+6096,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/js/theme.js,200,OK,6,981,1653
+6098,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/js/nav_sidebar.js,200,OK,5,981,3063
+6099,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,4,859,1540
+6100,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin,200,OK,36,1107,4184
+6102,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/health,200,OK,33,849,2
+6107,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:39 PST 2025,GET,http://localhost:8000/admin/,200,OK,33,1107,4184
+6109,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,8,859,1540
+6110,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,9,858,143
+6111,Sun Oct 12 16:54:39 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,16,986,1046583
+6113,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/css/login.css,200,OK,16,973,951
+6114,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/css/nav_sidebar.css,200,OK,16,974,2810
+6115,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,16,981,2093
+6116,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,16,859,1540
+6117,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,16,983,56904
+6118,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,16,974,1047
+6119,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,16,975,2715
+6120,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,17,859,1540
+6121,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/css/responsive.css,200,OK,16,976,16632
+6122,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,16,981,2566
+6123,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,16,957,628
+6124,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,17,859,1540
+6125,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,17,959,4969
+6126,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,20,985,322863
+6127,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,24,986,1042511
+6128,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,19,859,1540
+6129,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,13,859,1540
+6130,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/immutable.min.js,200,OK,15,983,56904
+6131,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,15,981,2093
+6132,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,16,974,1047
+6133,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,18,986,1046583
+6134,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,19,859,1540
+6135,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,17,981,2566
+6136,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,16,975,2715
+6137,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,18,957,628
+6138,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,19,959,4969
+6139,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,19,859,1540
+6140,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,26,985,322863
+6141,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,200,OK,19,1107,4194
+6142,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/,200,OK,19,1107,4184
+6143,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,15,920,58
+6144,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,200,OK,15,894,930
+6145,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,200,OK,16,849,2
+6148,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,19,974,1047
+6151,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/insQ.min.js,200,OK,18,981,2093
+6152,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,16,975,2715
+6154,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,17,957,628
+6155,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,27,986,1042511
+6156,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc-logo.png,200,OK,19,959,4969
+6157,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,20,859,1540
+6158,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,22,981,2566
+6159,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,23,986,1046583
+6160,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,18,1107,4184
+6162,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,200,OK,18,1107,4184
+6164,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,16,985,322863
+6165,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,12,975,2715
+6166,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,13,974,1047
+6167,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,12,957,628
+6168,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,9,981,2566
+6169,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,9,859,1540
+6170,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,17,858,143
+6171,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,13,974,1047
+6172,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,13,975,2715
+6174,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,14,957,628
+6175,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,12,859,1540
+6176,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,12,981,2566
+6177,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,16,985,322863
+6178,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,26,986,1042511
+6179,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,25,986,1046583
+6180,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/,200,OK,18,1107,4184
+6181,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,200,OK,16,849,2
+6182,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,15,920,58
+6183,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,200,OK,13,1107,4194
+6184,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,200,OK,14,894,930
+6185,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,12,985,322863
+6186,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,12,981,2566
+6187,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,11,859,1540
+6188,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,11,957,628
+6189,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,11,974,1047
+6190,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,10,975,2715
+6196,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,2,978,145206
+6197,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,200,OK,19,1107,4184
+6198,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,23,986,1042511
+6199,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,4,985,322863
+6200,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,4,981,2566
+6201,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,8,986,1046583
+6203,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,7,978,145206
+6204,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,7,975,2715
+6205,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,7,859,1540
+6206,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,7,974,1047
+6207,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,6,957,628
+6208,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,7,983,15480
+6209,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,3,981,2566
+6210,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,13,859,1540
+6211,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,15,885,0
+6212,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,14,974,1047
+6213,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,14,978,145206
+6214,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,14,975,2715
+6215,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,14,983,15480
+6216,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,13,957,628
+6217,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc-init.js,200,OK,13,981,2566
+6218,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,20,985,322863
+6219,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,25,986,1042511
+6220,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,24,986,1046583
+6221,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,21,957,628
+6222,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,21,983,15480
+6223,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,20,975,2715
+6224,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,20,978,145206
+6225,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/style.css,200,OK,19,974,1047
+6226,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,19,895,1658
+6227,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,18,859,1540
+6228,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,16,1107,4184
+6230,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,19,985,322863
+6231,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,11,920,58
+6233,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,200,OK,9,1107,4194
+6235,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,200,OK,16,894,930
+6237,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/favicon-32x32.png,200,OK,13,957,628
+6238,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,18,895,1658
+6239,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,200,OK,18,849,2
+6241,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html,200,OK,13,975,2715
+6242,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/,200,OK,13,1107,4184
+6243,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,13,983,15480
+6246,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,16,895,1658
+6247,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,16,978,145206
+6248,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,16,859,1540
+6249,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,17,858,143
+6251,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,6,983,15480
+6252,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,16,985,322863
+6253,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,36,986,1042511
+6254,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,200,OK,16,1107,4184
+6255,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,27,986,1046583
+6256,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,11,895,1658
+6257,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,15,978,145206
+6258,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,12,983,15480
+6260,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js,200,OK,14,985,322863
+6261,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,8,983,15480
+6262,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,10,978,145206
+6263,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,11,895,1658
+6264,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,14,986,1042511
+6265,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,17,986,1046583
+6266,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login/?next=/admin/,200,OK,22,1107,4184
+6267,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,7,920,58
+6268,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,200,OK,6,894,930
+6271,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,21,983,15480
+6273,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,20,978,145206
+6274,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,200,OK,8,1107,4194
+6276,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,20,895,1658
+6277,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,16,895,1658
+6278,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,200,OK,14,849,2
+6281,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,POST,http://localhost:8000/admin/login/?next=/admin/,429,Too Many Requests,4,858,143
+6283,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/,200,OK,15,1107,4184
+6285,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,5,983,15480
+6286,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,21,986,1042511
+6287,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,7,978,145206
+6288,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,3,983,15480
+6289,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,10,895,1658
+6290,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,11,986,1046583
+6291,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,4,983,15480
+6292,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,3,978,145206
+6293,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,12,895,1658
+6294,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-init.js,200,OK,10,983,15480
+6295,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,12,978,145206
+6296,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,21,986,1042511
+6297,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,5,895,1658
+6298,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,17,986,1046583
+6299,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui.css,200,OK,8,978,145206
+6300,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js,200,OK,21,986,1046583
+6301,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc/redoc.min.js,200,OK,23,986,1042511
+6302,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,200,OK,6,1107,4184
+6303,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,200,OK,10,849,2
+6304,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,200,OK,8,1107,4194
+6305,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,200,OK,8,894,930
+6306,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,9,895,1658
+6307,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,401,Unauthorized,6,920,58
+6308,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,7,895,1658
+6315,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,3,895,1658
+6316,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,3,895,1658
+6317,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger/,200,OK,3,895,1658
+6318,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,200,OK,2,894,930
+6320,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,3,895,1658
+6322,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,200,OK,2,1107,4184
+6324,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,2,895,1658
+6326,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,200,OK,2,1107,4184
+6328,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,2,895,1658
+6330,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,2,895,1658
+6332,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,4,895,1658
+6334,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,2,895,1658
+6336,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,2,895,1658
+6338,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,2,895,1658
+6340,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,200,OK,3,895,1658
+6342,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+6343,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,3,859,1540
+6344,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,2,859,1540
+6345,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,3,883,0
+6346,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,302,Found,3,1015,0
+6347,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,3,881,0
+6348,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,3,859,1540
+6349,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,2,884,0
+6350,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,3,883,0
+6351,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+6352,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,3,859,1540
+6353,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,2,859,1540
+6354,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,3,859,1540
+6355,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,2,859,1540
+6356,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,2,859,1540
+6357,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,2,859,1540
+6358,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,3,885,0
+6359,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000,200,OK,2,852,1043
+6360,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/.well-known,404,Not Found,3,859,1540
+6361,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/.well-known/appspecific,404,Not Found,3,859,1540
+6362,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin,301,Moved Permanently,2,883,0
+6363,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/admin/login,302,Found,2,1015,0
+6364,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api,301,Moved Permanently,2,881,0
+6365,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/api/auth,404,Not Found,2,859,1540
+6366,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/health,301,Moved Permanently,2,884,0
+6367,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/redoc,301,Moved Permanently,2,883,0
+6368,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static,404,Not Found,2,859,1540
+6369,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin,404,Not Found,3,859,1540
+6370,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/css,404,Not Found,3,859,1540
+6371,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/admin/js,404,Not Found,3,859,1540
+6372,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg,404,Not Found,3,859,1540
+6373,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/redoc,404,Not Found,4,859,1540
+6374,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/static/drf-yasg/swagger-ui-dist,404,Not Found,19,859,1540
+6375,Sun Oct 12 16:54:40 PST 2025,Sun Oct 12 16:54:40 PST 2025,GET,http://localhost:8000/swagger,301,Moved Permanently,3,885,0
